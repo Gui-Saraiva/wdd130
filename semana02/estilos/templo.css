@@ -1,0 +1,62 @@
+* { /* seletor universal. usado para resetar todas as configurações declaradas no bloco. */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+header {
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+main {
+    margin: 0 auto; /* centraliza automaticamente na horizontal. Isso é o mesmo que margin-top: 0, margin-right: auto, margin-bottom: 0, margin-left: auto. O browser ve o tamanho da janela, pega o tamanho do elemento ve quanto de espaço tem sobrando e divide por igual para os lados.*/
+    width: 600px;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+img {
+    width: 580px;
+    height: auto;
+    border: 10px solid #fff;
+    box-shadow: 0 0 15px #9b9b9b;
+}
+
+section {
+    background-color: #d9d9d9;
+    margin: 20px 0;
+    padding: 30px;
+    line-height: 1.5rem; /* entre linhas das frases */
+}
+
+section p {
+    margin-bottom: 5px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+section ul {
+    margin-left: 18px;
+}
