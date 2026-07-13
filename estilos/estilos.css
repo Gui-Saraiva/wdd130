@@ -1,4 +1,4 @@
-:root {
+:root { /* seletor :root{ } onde guarda as variaveis css */
     --background-color: darkblue;
     --font-color: darkblue;
 }
