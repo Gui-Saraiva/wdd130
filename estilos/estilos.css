@@ -30,6 +30,7 @@ main img {
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
@@ -41,18 +42,34 @@ main {
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2); /* O valor RGB consiste em quatro valores: vermelho, verde, azul e alfa. Os três primeiros valores (0, 0, 0) representam preto, e o último valor, de .2 (20%), representa o alfa, ou opacidade da cor. */
-    padding: 1rem;
-    background-color: #eee;
+    width: 20rem;    
     color: #333;
     text-align: center;
+    position: relative; /* faz com que esse elemento pai assegure que os elementos filhos não sairao dele */
   }
 
 aside img {
     width: 200px;
     height: auto;
+}
+
+aside h2 {
+    position: absolute; /* faz com que esse elemento se sobreponha dentro do aside */
+    /* left: 50%; leva o lado esquerdo até o meio */
+    /* transform: translateX(-50%); volta metade da largura do h2 */
+    top: 147px;
+    left: 20px;
+}
+
+.caixa {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2); /* O valor RGB consiste em quatro valores: vermelho, verde, azul e alfa. Os três primeiros valores (0, 0, 0) representam preto, e o último valor, de .2 (20%), representa o alfa, ou opacidade da cor. */
+    padding: 1rem;
+    background-color: #eee;
+}
+
+.identacao {
+    padding-left: 2rem;
 }
 
 footer {
