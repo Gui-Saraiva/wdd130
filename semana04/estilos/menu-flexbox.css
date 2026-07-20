@@ -5,16 +5,16 @@ body {
 
 nav {
     background-color: #36454f;
+    width: 90%;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    max-width: 900px;
+    justify-content: space-evenly;
     margin: 0 auto;
-    justify-content: space-around;
-    align-items: center;
+    padding: 0;
 }
 
 nav a {
@@ -23,6 +23,12 @@ nav a {
     text-align: center;
     padding: 1rem;
     text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 p {
