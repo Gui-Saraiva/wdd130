@@ -16,6 +16,7 @@ nav {
     align-items: center;
     padding: 1rem;
     height: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 nav a {
@@ -30,8 +31,8 @@ nav a {
     display: grid;
     align-items: start;
     grid-template-columns: 20rem 1fr;
-    gap: 1rem;
-    margin: 0.2rem auto;
+    gap: 0.5rem;
+    margin: 0.8rem auto 0 auto;
     width: 52rem;
 }
 
@@ -42,6 +43,7 @@ h1 {
     padding-bottom: 0.5rem;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    margin-top: -0.7rem;
 }
 
 h2 {
@@ -66,7 +68,7 @@ main img {
 }
 
 p {
-    line-height: 20px;
+    line-height: 20px;        
 }
 
 aside {
@@ -93,25 +95,34 @@ aside h2 {
     left: 20px;
 }
 
+.identacao {
+    margin-bottom: 0.5rem;
+}
+
 .caixa {
-    margin-top: 0.5rem;
+    
     border: 1px solid rgb(0 0 0 / 0.2); /* O valor RGB consiste em quatro valores: vermelho, verde, azul e alfa. Os três primeiros valores (0, 0, 0) representam preto, e o último valor, de .2 (20%), representa o alfa, ou opacidade da cor. */
     padding: 1rem;
     background-color: #eee;
     height: 97%;
 }
 
-li {
-    padding: 0.2rem;
-}
-
-.identacao {
-    padding-left: 2rem;
-    
+.ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    background-color: #eee;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    height: 4.3rem;
+    justify-content: center;
 }
 
 header, footer .grid {        
     text-align: center;
     max-width: 840px;
     margin: 0 auto;
+  }
+
+footer p {
+    text-align: center;
   }
