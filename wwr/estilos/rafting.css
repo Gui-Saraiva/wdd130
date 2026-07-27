@@ -12,6 +12,17 @@
     box-sizing: border-box;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    align-items: center;
+}
+
+.navegacao {
+    display: flex;
+    list-style: none; /* remove as bolinhas da lista */
+}
+
 body {
     font-family: var(--fonte-body);
     color: var(--cor-destaque1);
@@ -22,8 +33,13 @@ header, main, footer {
     margin: 0 auto;    
 }
 
-li {
-    padding: 0.3%;
+li {    
+    flex: 0.5 0.5 auto;
+}
+
+li a {
+    text-decoration: none;
+    display:
 }
 
 .hero {
@@ -79,9 +95,4 @@ footer p, section p{
 nav, p, section, article {
     margin: 10px;
     padding: 3px;
-}
-
-nav a {
-    text-decoration: none;
-    margin: 5px;
 }
