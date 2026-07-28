@@ -1,6 +1,6 @@
 :root {
     --cor-primaria: #055a05; /* verde-floresta */    
-    --cor-destaque1: #e98151; /* azul-escuro acinzentado */    
+    --cor-destaque1: #bd3c00; /* azul-escuro acinzentado */    
     --fonte-titulo: "Times New Roman", "Georgia", serif;
     --fonte-body: Arial, Helvetica, sans-serif;
     --cor-preta: black;
@@ -39,7 +39,7 @@ li {
     text-align: center;
     width: 8rem;
     height: 2rem;
-    background-color: #d47323;    
+    background-color: var(--cor-destaque1);    
     line-height: 2rem; /* define a altura da linha do obj dentro da lista <a> */
     border-radius: 6px;
 }
@@ -91,7 +91,7 @@ h2 {
 }
 
 .section-historia {
-    color: black; 
+    color: var(--cor-preta); 
     margin-top: 15px;   
     line-height: 25px;
     text-align: center;
