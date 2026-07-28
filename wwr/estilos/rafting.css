@@ -42,6 +42,7 @@ li {
     background-color: var(--cor-destaque1);    
     line-height: 2rem; /* define a altura da linha do obj dentro da lista <a> */
     border-radius: 6px;
+    color: white;
 }
 
 li a {
