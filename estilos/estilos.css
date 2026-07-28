@@ -10,47 +10,81 @@
 }
 
 nav {
-    background-color: var(--background-color);
-    padding: 10px;
+    background-color: var(--background-color);    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 nav a {
     color: white;
-    display: block;
-    padding: 20px;
+    display: block;    
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
-h1 {
+.grid {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 20rem 1fr;
+    gap: 0.5rem;
+    margin: 0.8rem auto 0 auto;
+    width: 52rem;
+}
+
+h1 {    
+    width: 100%;
     color: var(--font-color);
+    border-bottom: 1px solid var(--font-color);    
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: -0.7rem;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    float: right;
-}
-
-p {
-    padding: 0;
+h2 {
+    color: black;
 }
 
 main {
-    max-width: 850px;
+    
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+main img {
+    width: 10rem;
+    height: auto;
+    border: 1px solid black;
+    padding: 0.2rem;
+    box-shadow: 0 0 10px rgb(167, 167, 167);
+    float: right;
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+}
+
+p {
+    line-height: 20px;        
 }
 
 aside {
-    width: 20rem;    
+    width: 20rem;
+    height: 23rem; 
     color: #333;
     text-align: center;
     position: relative; /* faz com que esse elemento pai assegure que os elementos filhos não sairao dele */
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 
 aside img {
-    width: 200px;
+    width: 12rem;
     height: auto;
+    box-shadow: 0 0 10px rgb(167, 167, 167);
 }
 
 aside h2 {
@@ -61,19 +95,34 @@ aside h2 {
     left: 20px;
 }
 
+.identacao {
+    margin-bottom: 0.5rem;
+}
+
 .caixa {
-    margin: 1rem;
+    
     border: 1px solid rgb(0 0 0 / 0.2); /* O valor RGB consiste em quatro valores: vermelho, verde, azul e alfa. Os três primeiros valores (0, 0, 0) representam preto, e o último valor, de .2 (20%), representa o alfa, ou opacidade da cor. */
     padding: 1rem;
     background-color: #eee;
+    height: 97%;
 }
 
-.identacao {
-    padding-left: 2rem;
+.ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    background-color: #eee;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    height: 4.3rem;
+    justify-content: center;
 }
 
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+header, footer .grid {        
+    text-align: center;
+    max-width: 840px;
+    margin: 0 auto;
+  }
+
+footer p {
     text-align: center;
   }
