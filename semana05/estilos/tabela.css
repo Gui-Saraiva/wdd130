@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid gray;    
+}
+
+th, td {
+    border: 1px solid gray;
+    text-align: center;
+    padding: 8px 12px; /* faz padding na vertical e horizontal */
+}
+
+thead th, tfoot tr {
+    background-color: black;
+    color: white;
+    font-weight: 700; /* engorda a letra */
+}
+
