@@ -199,6 +199,10 @@ h2 {
 figure {
     text-align: center;
     font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;    
+    gap: 5px;  
+    margin-bottom: 5px;
 }
 
 .hero article img {
@@ -219,11 +223,6 @@ main footer {
     border: 2px solid gray;
 }
 
-figure {
-    display: flex;    
-    gap: 80px;    
-}
-
 figure img {
     background-color: #fff;
     width: 100px;
@@ -231,11 +230,9 @@ figure img {
     border-radius: 5px;
 }
 
-.img {
+.imagens {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 5px;    
+    gap: 90px;
 }
 
 footer {
